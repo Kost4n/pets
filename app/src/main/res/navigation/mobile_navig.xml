@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/navigation_recommendation">
+
+    <fragment
+            android:id="@+id/navigation_recommendation"
+            android:name="com.mypet.app.ui.recommendation.RecommendationFragment"
+            android:label="@string/title_recommendation"
+            tools:layout="@layout/fragment_recommendation"/>
+
+    <fragment
+            android:id="@+id/navigation_notes"
+            android:name="com.mypet.app.ui.notes.NotesFragment"
+            android:label="@string/title_note"
+            tools:layout="@layout/fragment_note"/>
+</navigation>
